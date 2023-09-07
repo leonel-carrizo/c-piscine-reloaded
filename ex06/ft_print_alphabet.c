@@ -6,7 +6,7 @@
 /*   By: lcarrizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 12:55:26 by lcarrizo          #+#    #+#             */
-/*   Updated: 2023/09/05 13:17:19 by lcarrizo         ###   ########.fr       */
+/*   Updated: 2023/09/07 10:13:53 by lcarrizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,13 @@ void	ft_print_alphabet(void)
 {
 	int	x;
 
-	x = 97;
-	while (x >= 97 && x <= 122)
-	{
-		ft_putchar(x);
-		x++;
-	}
+	x = 'a';
+	while (x >= 'a' && x <= 'z')
+		ft_putchar(x++);
 }
 
-/*int	main(void)
-{
-	ft_print_alphabet();
-	return (0);
-}*/
+//int	main(void)
+//{
+//	ft_print_alphabet();
+//	return (0);
+//}

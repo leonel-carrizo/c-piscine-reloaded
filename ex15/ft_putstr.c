@@ -6,7 +6,7 @@
 /*   By: lcarrizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 17:20:31 by lcarrizo          #+#    #+#             */
-/*   Updated: 2023/09/05 17:20:35 by lcarrizo         ###   ########.fr       */
+/*   Updated: 2023/09/07 10:44:56 by lcarrizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,12 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
-	{
-		ft_putchar(str[i]);
-		i++;
-	}	
+	while (str[i])
+		ft_putchar(str[i++]);
 }
 
 //int	main(void)
 //{
-//	char	hi[] = "hola mundo loco 2023";
-//
-//	ft_putstr(hi);
-//
+//	ft_putstr("hola mundo");
 //	return (0);
 //}

@@ -6,7 +6,7 @@
 /*   By: lcarrizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 13:47:27 by lcarrizo          #+#    #+#             */
-/*   Updated: 2023/09/05 14:00:43 by lcarrizo         ###   ########.fr       */
+/*   Updated: 2023/09/07 10:25:23 by lcarrizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,20 @@ void	ft_putchar(char c)
 void	ft_is_negative(int n)
 {
 	if (n < 0)
-	{
-		ft_putchar(78);
-	}
+		ft_putchar('N');
 	else
-	{
-		ft_putchar(80);
-	}
+		ft_putchar('P');
 }
 
-/*int	main(void)
-{
-	ft_is_negative(5);
-	ft_putchar('\n');
-	ft_is_negative(-5);
-	ft_putchar('\n');
-	ft_is_negative(0);
-	ft_putchar('\n');
-	ft_is_negative('\0');
-	ft_putchar('\n');
-	return (0);
-}*/
+//int	main(void)
+//{
+//	ft_is_negative(5);
+//	ft_putchar('\n');
+//	ft_is_negative(-5);
+//	ft_putchar('\n');
+//	ft_is_negative(0);
+//	ft_putchar('\n');
+//	ft_is_negative('\0');
+//	ft_putchar('\n');
+//	return (0);
+//}
