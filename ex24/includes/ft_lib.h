@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_lib.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcarrizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/05 15:18:20 by lcarrizo          #+#    #+#             */
-/*   Updated: 2023/09/08 17:55:22 by lcarrizo         ###   ########.fr       */
+/*   Created: 2023/09/08 11:10:20 by lcarrizo          #+#    #+#             */
+/*   Updated: 2023/09/08 11:15:43 by lcarrizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#ifndef FT_LIB_H
+# define FT_LIB_H
 
-int	ft_recursive_factorial(int nb)
-{
-	if (nb < 0)
-		return (0);
-	if (nb <= 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
-}
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+void	ft_swap(int *a, int *b);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_strlen(char *str);
 
-//int	main(void)
-//{
-//	int	x;
-//
-//	x = ft_recursive_factorial(5);
-//	printf("result: %d\n", x);
-//	return (0);
-//}
+#endif
